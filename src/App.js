@@ -19,7 +19,7 @@ function App() {
         { /* <GreetingF name='Augusto'></GreetingF> */ }
 
         { /* Componente de listado de tareas */ }
-        {/* <TaskListComponent></TaskListComponent> */ }
+        <TaskListComponent></TaskListComponent>
         { /* Ejemplos Hooks */ }
         <Ejemplo1></Ejemplo1>
         <Ejemplo2></Ejemplo2>

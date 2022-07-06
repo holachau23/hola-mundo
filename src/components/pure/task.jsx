@@ -1,9 +1,17 @@
 import { Task } from "../../models/task.class";
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 
 const TaskComponent = ({ task }) => {
+
+    useEffect(() => {
+        console.log('Task created');
+        return () => {
+            console.log(`Task ${task.name} deleted`)
+        };
+    }, [task]);
+
     return (
         <div>
             <h2>Name: { task.name }</h2>
